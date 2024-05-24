@@ -34,7 +34,7 @@ body {
 
   height: 100vh;
   display: grid;
-  grid-template-rows: 15em 1fr 8em;
+  grid-template-rows: 4em 1fr 6em;
   grid-auto-columns: ifr;
   grid-template-areas: "header" "content" "footer";
 }

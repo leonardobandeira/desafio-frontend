@@ -2,7 +2,6 @@
 <template>
   <div class="header">
     <Logo :imagem="require('@/assets/logo.jpg')" />
-    <h1>Cabecalho</h1>
     <Usuario usuario="Usuário" />
   </div>
 </template>
@@ -27,7 +26,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: #f8f8f8; /* Exemplo de cor de fundo */
+  background-color: red; /*f8f8f8 Exemplo de cor de fundo */
 }
 
 .header h1 {
