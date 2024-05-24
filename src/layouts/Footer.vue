@@ -19,5 +19,6 @@ export default {
 
   color: gray;
   font-size: 0.8em;
+  background-color: #f8f8f8;
 }
 </style>

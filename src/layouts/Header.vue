@@ -26,7 +26,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: #f8f8f8; /*f8f8f8 Exemplo de cor de fundo */
+  background-color: #fff /*f8f8f8 Exemplo de cor de fundo */
 }
 
 .header h1 {
