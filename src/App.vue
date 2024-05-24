@@ -31,7 +31,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
   height: 100vh;
   display: grid;
   grid-template-rows: 4em 1fr 6em;
