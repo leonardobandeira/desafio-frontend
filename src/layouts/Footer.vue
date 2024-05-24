@@ -16,5 +16,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  color: gray;
+  font-size: 0.8em;
 }
 </style>
