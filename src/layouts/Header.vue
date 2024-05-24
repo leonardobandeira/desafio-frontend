@@ -1,8 +1,8 @@
 <!-- src/components/Header.vue -->
 <template>
   <div class="header">
-    <Logo :imagem="require('@/assets/logo.jpg')" />
-    <Usuario usuario="Usuário" />
+    <Logo :imagem="require('@/assets/logo.png')" />
+    <Usuario usuario="Otávio Oliveira" />
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: red; /*f8f8f8 Exemplo de cor de fundo */
+  background-color: #f8f8f8; /*f8f8f8 Exemplo de cor de fundo */
 }
 
 .header h1 {
