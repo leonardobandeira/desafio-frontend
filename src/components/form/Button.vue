@@ -1,9 +1,7 @@
 <template>
   <button :class="tipo" @click="acao">
-    <i
-      v-if="tipo === 'buscar'"
-      class="fa-solid fa-magnifying-glass icon__buscar"
-    ></i>
+    <i v-if="icone" :class="`fa-solid ${icone}`"></i>
+
     {{ texto }}
   </button>
 </template>
@@ -24,6 +22,9 @@ export default {
       type: Function,
       required: true,
     },
+    icone: {
+      type: String,
+    },
   },
 };
 </script>
@@ -31,7 +32,7 @@ export default {
 <style>
 .adicionar {
   color: #fff;
-  font-size: 1.em;
+  font-size: 1em;
   font-weight: 400;
   height: 2.7em;
   background-color: #007bff;
@@ -44,15 +45,15 @@ export default {
 .buscar {
   background: #fff;
   border: solid 0.12em #007bff;
-  font-size: 1.em;
+  font-size: 1em;
   font-weight: 400;
   height: 2.7em;
   border-radius: 2px;
   color: #007bff;
   cursor: pointer;
+}
 
-  i {
-    padding-right: 0.4em;
-  }
+.buscar i {
+  padding-right: 0.4em;
 }
 </style>
