@@ -1,7 +1,7 @@
 <template>
   <div class="row content__titulo">
     <Title tipo="primary" texto="BTC Carteiras"/>
-    <Button tipo="add" texto="Adicionar Carteira" acao="add" />
+    <Button tipo="adicionar" texto="Adicionar Carteira" acao="add" />
   </div>
 </template>
 

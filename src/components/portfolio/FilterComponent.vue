@@ -1,5 +1,5 @@
 <template>
- <div class="row content__filter">
+  <div class="row content__filter">
     <FormInput
       type="text"
       name="nome"
@@ -18,19 +18,18 @@
       id="email"
       placeholder="Informe o email do cliente"
     />
-    <button class="btn__buscar">
-      <i class="fa-solid fa-magnifying-glass icon__buscar"></i>Buscar
-    </button>
-  </div> 
+    <Button tipo="buscar" texto="Buscar" acao="buscar" />
+  </div>
 </template>
 
 <script>
 import FormInput from "./../form/FormInput";
-
+import Button from "./../form/Button";
 export default {
   name: "FilterComponent",
   components: {
-   FormInput,
+    FormInput,
+    Button,
   },
 };
 </script>
