@@ -1,6 +1,14 @@
 <template>
   <div class="content">
-    <HeaderComponent />
+    <HeaderComponent>
+      <template #left>
+        <Title tipo="primary" texto="BTC Carteiras" />
+      </template>
+      <template #right>
+        <Button tipo="adicionar" texto="Adicionar Carteira" acao="add" />
+      </template>
+    </HeaderComponent>
+
     <FilterComponent />
     <div class="row content__tabela">
       slkanalcasslkanalcasslkanalcasslkanalcassl
@@ -13,11 +21,16 @@
 <script>
 import HeaderComponent from "./../components/portfolio/HeaderComponent";
 import FilterComponent from "./../components/portfolio/FilterComponent";
+
+import Title from "./../components/form/Title";
+import Button from "./../components/form/Button";
 export default {
   name: "Content",
   components: {
     HeaderComponent,
     FilterComponent,
+    Title,
+    Button,
   },
 };
 </script>

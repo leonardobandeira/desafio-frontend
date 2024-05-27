@@ -1,19 +1,14 @@
 <template>
   <div class="row content__titulo">
-    <Title tipo="primary" texto="BTC Carteiras"/>
-    <Button tipo="adicionar" texto="Adicionar Carteira" acao="add" />
+    <slot name="left"></slot>
+    <slot name="right"></slot>
   </div>
 </template>
 
+
 <script>
-import Title from "./../form/Title";
-import Button from "./../form/Button";
 export default {
-  name: "HeaderPage",
-  components: {
-    Title,
-    Button,
-  },
+  name: "HeaderComponent",
 };
 </script>
 
