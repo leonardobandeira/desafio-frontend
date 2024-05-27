@@ -3,7 +3,7 @@
     <table class="table zebra">
       <thead>
         <TableRow>
-          <TableHeader>Nome"</TableHeader>
+          <TableHeader>Nome</TableHeader>
           <TableHeader>Sobrenome</TableHeader>
           <TableHeader>Email</TableHeader>
           <TableHeader>Bitcoin</TableHeader>
@@ -16,16 +16,7 @@
           <TableCell>1</TableCell>
           <TableCell>1</TableCell>
           <TableCell>1</TableCell>
-          <TableCell>
-            <Button tipo="acao" texto="" acao="editar" icone="fa-pen" />
-            <Button tipo="acao" texto="" acao="apagar" icone="fa-trash" />
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>1</TableCell>
-          <TableCell>1</TableCell>
-          <TableCell>1</TableCell>
-          <TableCell>1</TableCell>
+          
           <TableCell :tamanho="80">
             <Button tipo="acao" texto="" acao="editar" icone="fa-pen" />
             <Button tipo="acao" texto="" acao="apagar" icone="fa-trash" />
@@ -48,17 +39,7 @@ export default {
 </script>
 
 <style>
-.content__tabela {
-  background: #fff;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  justify-content: left;
-  padding: 1.5em 0.5em;
-}
 
-.table-container {
-  margin: 0 auto;
-}
 
 .table {
   width: 100%;

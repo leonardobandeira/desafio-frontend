@@ -1,5 +1,5 @@
 <template>
-  <div class="row content__tabela">
+  <div class="row content__body">
     <HeaderComponent>
       <template #left>
         <Title tipo="secondary" texto="Carteiras" />
@@ -9,7 +9,9 @@
       </template>
     </HeaderComponent>
     <br />
-    <Table />
+    <Table>
+    
+    </Table>
     <Linha />
   </div>
 </template>
@@ -37,4 +39,11 @@ export default {
 </script>
 
 <style>
+.content__body {
+  background: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  justify-content: left;
+  padding: 1.5em 0.5em;
+}
 </style>
