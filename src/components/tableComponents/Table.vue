@@ -37,7 +37,7 @@
 import TableHeader from "../tableComponents/TableHeader";
 import TableRow from "../tableComponents/TableRow";
 import TableCell from "../tableComponents/TableCell";
-import Button from "./Button";
+import Button from "./../form/Button";
 export default {
   name: "Table",
   components: { TableHeader, TableRow, TableCell, Button },

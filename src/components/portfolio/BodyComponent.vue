@@ -19,7 +19,7 @@ import HeaderComponent from "./../../layouts/Header";
 
 import Title from "./../form/Title";
 import Button from "./../form/Button";
-import Table from "./../form/Table";
+import Table from "./../tableComponents/Table";
 import Linha from "./../Linha";
 export default {
   name: "BodyComponent",
