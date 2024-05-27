@@ -38,8 +38,9 @@ export default {
   border: 0.1em solid #007bff;
   padding: 8px;
   border-radius: 4px;
+  margin: 0 1em;
   font-size: 16px;
-  width: 17em;
-  max-width: 17em;
+  width: 100%;
+  min-width: 13em;
 }
 </style>

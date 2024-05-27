@@ -1,18 +1,18 @@
 <template>
   <div class="row content__filter">
-    <FormInput
+    <InputForm
       type="text"
       name="nome"
       id="nome"
       placeholder="Informe o nome do cliente"
     />
-    <FormInput
+    <InputForm
       type="text"
       name="sobrenome"
       id="sobrenome"
       placeholder="Informe o sobrenome do cliente"
     />
-    <FormInput
+    <InputForm
       type="text"
       name="email"
       id="email"
@@ -23,12 +23,12 @@
 </template>
 
 <script>
-import FormInput from "./../form/FormInput";
+import InputForm from "./../form/InputForm";
 import Button from "./../form/Button";
 export default {
   name: "FilterComponent",
   components: {
-    FormInput,
+    InputForm,
     Button,
   },
 };
@@ -46,6 +46,6 @@ export default {
   width: 100%;
   height: 4em;
   margin: 2em 0 2em 0;
-  border-radius: 0.2em;
+  border-radius: 0.1em;
 }
 </style>
