@@ -16,5 +16,6 @@ export default {
 .content__titulo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 </style>
