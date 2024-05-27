@@ -15,10 +15,12 @@
           <TableCell texto="1" />
           <TableCell texto="João" />
           <TableCell texto="30" />
+          <TableCell texto="30" />
         </TableRow>
         <TableRow>
           <TableCell texto="2" />
           <TableCell texto="Maria" />
+          <TableCell texto="25" />
           <TableCell texto="25" />
         </TableRow>
       </tbody>
@@ -68,7 +70,7 @@ tbody tr{
   border-left: #fff 2px solid;
 }
 
-tbody tr:hover{
+.zebra tbody tr:hover{
   background: #fff;
   border-left: #007bff 2px solid;
 }
