@@ -31,9 +31,11 @@ export default {
 <style>
 .adicionar {
   color: #fff;
-  font-size: 1em;
+  font-size: 1.em;
+  font-weight: 400;
+  height: 2.7em;
   background-color: #007bff;
-  padding: 0.4em 1em;
+  padding: 0.4em 1.8em;
   border: #007bff;
   border-radius: 4px;
   cursor: pointer;
@@ -42,12 +44,13 @@ export default {
 .buscar {
   background: #fff;
   border: solid 0.12em #007bff;
-  font-size: 1em;
-  width: 7em;
-  height: 2.2em;
+  font-size: 1.em;
+  font-weight: 400;
+  height: 2.7em;
   border-radius: 2px;
   color: #007bff;
   cursor: pointer;
+  margin: 0 2em;
 
   i {
     padding-right: 0.4em;
