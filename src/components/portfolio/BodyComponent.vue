@@ -1,5 +1,5 @@
 <template>
-  <div class="row content__body">
+  <div class="row content__tabela">
     <HeaderComponent>
       <template #left>
         <Title tipo="secondary" texto="Carteiras" />
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style>
-.content__body {
+.content__tabela {
   background: #fff;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
