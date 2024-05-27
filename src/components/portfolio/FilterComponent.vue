@@ -18,7 +18,7 @@
       id="email"
       placeholder="Informe o email do cliente"
     />
-    <Button tipo="buscar" texto="Buscar" acao="buscar" />
+    <Button tipo="buscar" texto="Buscar" acao="buscar" icone="fa-magnifying-glass"/>
   </div>
 </template>
 

@@ -1,41 +1,21 @@
-<!-- src/components/Header.vue -->
 <template>
-  <div class="header">
-    <Logo :imagem="require('@/assets/logo.png')" />
-    <Usuario usuario="Otávio Oliveira" />
+  <div class="row content__titulo">
+    <slot name="left"></slot>
+    <slot name="right"></slot>
   </div>
 </template>
 
-<script>
-import Logo from "./../components/Logo";
-import Usuario from "./../components/Usuario";
 
+<script>
 export default {
-  name: "Header",
-  components: {
-    Logo,
-    Usuario,
-  },
+  name: "HeaderComponent",
 };
 </script>
 
-<style scoped>
-.header {
-  grid-area: header;
+<style>
+.content__titulo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  background-color: #fff /*f8f8f8 Exemplo de cor de fundo */
-}
-
-.header h1 {
-  margin: 0;
-  flex: 1;
-  text-align: center;
-}
-
-.menu-do-usuario {
-  flex-shrink: 0;
 }
 </style>

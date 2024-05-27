@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import HeaderComponent from "./HeaderComponent";
+import HeaderComponent from "./../../layouts/Header";
 
 import Title from "./../form/Title";
 import Button from "./../form/Button";

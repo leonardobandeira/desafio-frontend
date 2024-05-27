@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import HeaderComponent from "./../components/portfolio/HeaderComponent";
+import HeaderComponent from "./Header";
 import FilterComponent from "./../components/portfolio/FilterComponent";
 import BodyComponent from "./../components/portfolio/BodyComponent";
 
