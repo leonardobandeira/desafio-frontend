@@ -3,25 +3,30 @@
     <table class="table zebra">
       <thead>
         <TableRow>
-          <TableHeader texto="Nome" />
-          <TableHeader texto="Sobrenome" />
-          <TableHeader texto="Email" />
-          <TableHeader texto="Bitcoin" />
-          <TableHeader texto="" />
+          <TableHeader>Nome"</TableHeader>
+          <TableHeader>Sobrenome</TableHeader>
+          <TableHeader>Email</TableHeader>
+          <TableHeader>Bitcoin</TableHeader>
+          <TableHeader></TableHeader>
         </TableRow>
       </thead>
       <tbody>
         <TableRow>
-          <TableCell texto="1" />
-          <TableCell texto="João" />
-          <TableCell texto="30" />
-          <TableCell texto="30" />
+          <TableCell>1</TableCell>
+          <TableCell>1</TableCell>
+          <TableCell>1</TableCell>
+          <TableCell>1</TableCell>
+          <TableCell>
+            <Button tipo="acao" texto="" acao="editar" icone="fa-pen" />
+            <Button tipo="acao" texto="" acao="apagar" icone="fa-trash" />
+          </TableCell>
         </TableRow>
         <TableRow>
-          <TableCell texto="2" />
-          <TableCell texto="Maria" />
-          <TableCell texto="25" />
-          <TableCell texto="25" />
+          <TableCell>1</TableCell>
+          <TableCell>1</TableCell>
+          <TableCell>1</TableCell>
+          <TableCell>1</TableCell>
+          <TableCell>1</TableCell>
         </TableRow>
       </tbody>
     </table>
@@ -32,9 +37,10 @@
 import TableHeader from "../tableComponents/TableHeader";
 import TableRow from "../tableComponents/TableRow";
 import TableCell from "../tableComponents/TableCell";
+import Button from "./Button";
 export default {
   name: "Table",
-  components: { TableHeader, TableRow, TableCell },
+  components: { TableHeader, TableRow, TableCell, Button },
 };
 </script>
 
@@ -66,11 +72,11 @@ export default {
   background-color: #f2f2f2;
 }
 
-tbody tr{
+tbody tr {
   border-left: #fff 2px solid;
 }
 
-.zebra tbody tr:hover{
+.zebra tbody tr:hover {
   background: #fff;
   border-left: #007bff 2px solid;
 }

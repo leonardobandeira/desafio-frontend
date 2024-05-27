@@ -1,7 +1,6 @@
 <template>
   <button :class="tipo" @click="acao">
     <i v-if="icone" :class="`fa-solid ${icone}`"></i>
-
     {{ texto }}
   </button>
 </template>
@@ -51,6 +50,20 @@ export default {
   border-radius: 2px;
   color: #007bff;
   cursor: pointer;
+}
+
+.acao{
+  border: none;
+  background: none;
+  padding: 1.em;
+  cursor: pointer;
+  font-size: 1.1em;
+  height: 1.8em;
+}
+
+.acao:hover{
+  background: #bebbbb;
+  border-radius: 50%;
 }
 
 .buscar i {
