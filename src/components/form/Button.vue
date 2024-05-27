@@ -50,7 +50,6 @@ export default {
   border-radius: 2px;
   color: #007bff;
   cursor: pointer;
-  margin: 0 2em;
 
   i {
     padding-right: 0.4em;
