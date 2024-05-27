@@ -1,9 +1,6 @@
 <template>
   <div class="content">
-    <div class="row content__titulo">
-      <span class="titulo">BTC Carteiras</span>
-      <button class="btn__add__carteira">Adicionar Carteira</button>
-    </div>
+    <HeaderPage/>
 
     <div class="row content__filter">
       <FormInput
@@ -38,10 +35,12 @@
 </template>
 
 <script>
-import FormInput from "./../components/FormInput";
+import HeaderPage from "./../components/portfolio/HeaderPage";
+import FormInput from "./../components/form/FormInput";
 export default {
   name: "Content",
   components: {
+    HeaderPage,
     FormInput,
   },
 };
@@ -52,27 +51,6 @@ export default {
   grid-area: content;
   padding: 3em 10em 0 10em;
   background-color: #f8f8f8;
-}
-
-.content__titulo {
-  display: flex;
-  justify-content: space-between;
-}
-
-.titulo {
-  color: #000;
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-.btn__add__carteira {
-  color: #fff;
-  font-weight: 400;
-  font-size: 1em;
-  background-color: #007bff;
-  padding: 0.4em 1em;
-  border: #007bff;
-  border-radius: 4px;
 }
 
 .content__filter {
