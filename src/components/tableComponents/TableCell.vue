@@ -1,10 +1,15 @@
 <template>
-  <td><slot></slot></td>
+  <td :width="tamanho"><slot></slot></td>
 </template>
 
 <script>
 export default {
   name: "TableCell",
+  props: {
+    tamanho: {
+      type: Number,
+    },
+  },
 };
 </script>
 

@@ -26,7 +26,10 @@
           <TableCell>1</TableCell>
           <TableCell>1</TableCell>
           <TableCell>1</TableCell>
-          <TableCell>1</TableCell>
+          <TableCell :tamanho="80">
+            <Button tipo="acao" texto="" acao="editar" icone="fa-pen" />
+            <Button tipo="acao" texto="" acao="apagar" icone="fa-trash" />
+          </TableCell>
         </TableRow>
       </tbody>
     </table>
