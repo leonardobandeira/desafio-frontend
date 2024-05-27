@@ -1,16 +1,10 @@
 <template>
-  <th>{{ texto }}</th>
+  <th><slot></slot></th>
 </template>
 
 <script>
 export default {
   name: "TableHeader",
-  props: {
-    texto: {
-      type: String,
-      required: true,
-    },
-  },
 };
 </script>
 
