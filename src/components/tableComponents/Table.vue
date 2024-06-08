@@ -18,12 +18,16 @@
           <TableCell>1</TableCell>
           
           <TableCell :tamanho="80">
-            <Button tipo="acao" texto="" acao="editar" icone="fa-pen" />
-            <Button tipo="acao" texto="" acao="apagar" icone="fa-trash" />
+            <Button tipo="acao" texto="" :acao="openModal" icone="fa-pen" />
+            <Button tipo="acao" texto="" :acao="apagar" icone="fa-trash" />
           </TableCell>
         </TableRow>
       </tbody>
     </table>
+    <Modal :showModal="modalOpen" @close="closeModal">
+      <h2>Meu Modal</h2>
+      <p>Este é o conteúdo do meu modal.</p>
+    </Modal>
   </div>
 </template>
 
@@ -32,15 +36,27 @@ import TableHeader from "../tableComponents/TableHeader";
 import TableRow from "../tableComponents/TableRow";
 import TableCell from "../tableComponents/TableCell";
 import Button from "./../form/Button";
+import Modal from './../Modal';
 export default {
   name: "Table",
-  components: { TableHeader, TableRow, TableCell, Button },
+  data() {
+    return {
+      modalOpen: false
+    };
+  },
+  components: { TableHeader, TableRow, TableCell, Button, Modal },
+  methods: {
+    openModal() {
+      this.modalOpen = true;
+    },
+    closeModal() {
+      this.modalOpen = false;
+    }
+  }
 };
 </script>
 
 <style>
-
-
 .table {
   width: 100%;
   border-collapse: collapse;

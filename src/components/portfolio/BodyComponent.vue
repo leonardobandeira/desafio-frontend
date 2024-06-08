@@ -5,14 +5,16 @@
         <Title tipo="secondary" texto="Carteiras" />
       </template>
       <template #right>
-        <Button tipo="buscar" texto="Exportar CSV" acao="exportar" />
+        <Button tipo="buscar" texto="Exportar CSV" :acao="openModal"/>
       </template>
     </HeaderComponent>
     <br />
-    <Table>
-    
-    </Table>
+    <Table> </Table>
     <Linha />
+
+    <Modal :showModal="modalOpen" @close="closeModal">
+     Preparando para exportar
+    </Modal>
   </div>
 </template>
 
@@ -23,6 +25,8 @@ import Title from "./../form/Title";
 import Button from "./../form/Button";
 import Table from "./../tableComponents/Table";
 import Linha from "./../Linha";
+import Modal from "../Modal";
+
 export default {
   name: "BodyComponent",
   components: {
@@ -34,6 +38,20 @@ export default {
     Table,
 
     Linha,
+    Modal,
+  },
+  data() {
+    return {
+      modalOpen: false,
+    };
+  },
+  methods: {
+    openModal() {
+      this.modalOpen = true;
+    },
+    closeModal() {
+      this.modalOpen = false;
+    },
   },
 };
 </script>

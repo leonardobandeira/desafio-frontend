@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checklist Desafio Frontend</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  label {
+    font-weight: bold;
+  }
+  .progress-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .progress {
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+  }
+</style>
+</head>
+<body>
+<h1>Checklist Desafio Frontend</h1>
+<div class="progress-bar">
+  <div class="progress" id="progress"></div>
+</div>
+<ul>
+  <li>
+    <input type="checkbox" id="fork-repo">
+    <label for="fork-repo">Fork do Repositório</label>
+    <ul>
+      <li><input type="checkbox"> Fazer fork do repositório <code>Oliveira-Trust/desafio-frontend</code> para sua conta no GitHub.</li>
+      <li><input type="checkbox"> Clonar o repositório forkado para a sua máquina local. Comando: <code>git clone https://github.com/seu-username/desafio-frontend.git</code></li>
+    </ul>
+  </li>
+  <li>
+    <input type="checkbox" id="create-branch">
+    <label for="create-branch">Criação de Branch</label>
+    <ul>
+      <li><input type="checkbox"> Criar uma nova branch com o seu nome completo. Comando: <code>git checkout -b seu-nome-completo</code></li>
+    </ul>
+  </li>
+  <li>
+    <input type="checkbox" id="install-dependencies">
+    <label for="install-dependencies">Instalação de Dependências</label>
+    <ul>
+      <li><input type="checkbox"> Instalar o json-server globalmente. Comando: <code>npm install -g json-server</code></li>
+      <li><input type="checkbox"> Instalar as dependências do projeto. Comando: <code>npm install</code></li>
+    </ul>
+  </li>
+  <li>
+    <input type="checkbox" id="run-project">
+    <label for="run-project">Execução do Projeto</label>
+    <ul>
+      <li><input type="checkbox"> Rodar o json-server. Comando: <code>json-server --watch db.json --port 3004</code></li>
+      <li><input type="checkbox"> Rodar a aplicação Vue.js. Comando: <code>npm start</code></li>
+    </ul>
+  </li>
+  <li>
+    <input type="checkbox" id="ui">
+    <label for="ui">Interface do Usuário</label>
+    <ul>
+      <li><input type="checkbox"> Acompanhar identidade visual do protótipo fornecido.</li>
+      <li><input type="checkbox"> Listar dados da API de usuários em uma tabela.</li>
+      <li><input type="checkbox"> Incluir todos os dados relevantes da API.</li>
+      <li><input type="checkbox"> Adicionar botões funcionais de editar (modal) e deletar registro para cada elemento.</li>
+      <li><input type="checkbox"> Implementar funcionalidade de paginação na listagem.</li>
+      <li><input type="checkbox"> Adicionar filtro para a listagem de usuários.</li>
+    </ul>
+  </li>
+  <li>
+    <input type="checkbox" id="modals">
+    <label for="modals">Modais</label>
+    <ul>
+      <li><input type="checkbox"> Implementar modal para editar registros de usuários.</li>
+      <li><input type="checkbox"> Validar os inputs durante a edição.</li>
+      <li><input type="checkbox"> Implementar modal para adicionar novas carteiras.</li>
+      <li><input type="checkbox"> Validar os inputs durante a criação.</li>
+    </ul>
+  </li>
+  <li>
+    <input type="checkbox" id="conversion">
+    <label for="conversion">Conversão de Moeda</label>
+    <ul>
+      <li><input type="checkbox"> Implementar conversão do saldo Bitcoin (BTC) de cada carteira.</li>
+      <li><input type="checkbox"> Util
+      <li><input type="checkbox"> Utilizar a API de conversão recomendada.</li>
+      <li><input type="checkbox"> Ao criar ou editar uma carteira, permitir a inserção de um valor de compra e exibir o valor adquirido na criptomoeda de destino.</li>
+    </ul>
+  </li>
+  <li>
+    <input type="checkbox" id="additional-features">
+    <label for="additional-features">Funcionalidades Adicionais</label>
+    <ul>
+      <li><input type="checkbox"> Implementar validação de inputs nos modais de criação e edição de carteiras.</li>
+      <li><input type="checkbox"> Implementar gerenciamento de estado utilizando Vuex (opcional, mas recomendado).</li>
+      <li><input type="checkbox"> Adicionar funcionalidade para exportar dados da lista em CSV (pode utilizar biblioteca npm).</li>
+    </ul>
+  </li>
+  <li>
+    <input type="checkbox" id="documentation">
+    <label for="documentation">Documentação e Entrega</label>
+    <ul>
+      <li><input type="checkbox"> Adicionar documentação sobre como rodar o projeto e qualquer configuração especial necessária.</li>
+      <li><input type="checkbox"> Commitar todas as mudanças e enviar um pull request do seu fork para o repositório original.</li>
+      <li><input type="checkbox"> Enviar o link do pull request juntamente com seu LinkedIn ou currículo para <code>vagas@oliveiratrust.com.br</code>.</li>
+    </ul>
+  </li>
+  <li>
+    <input type="checkbox" id="final-review">
+    <label for="final-review">Revisão Final</label>
+    <ul>
+      <li><input type="checkbox"> Revisar todo o código para garantir legibilidade e modularização.</li>
+      <li><input type="checkbox"> Testar todas as funcionalidades para assegurar que estão funcionando conforme o esperado.</li>
+    </ul>
+  </li>
+</ul>
+<script>
+  // Contagem de itens marcados
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const progressBar = document.getElementById('progress');
+  let checkedCount = 0;
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        checkedCount++;
+      } else {
+        checkedCount--;
+      }
+      updateProgressBar();
+    });
+  });
+
+  // Atualização da barra de progresso
+  function updateProgressBar() {
+    const totalItems = checkboxes.length;
+    const progress = (checkedCount / totalItems) * 100;
+    progressBar.style.width = progress + '%';
+  }
+</script>
+</body>
+</html>
